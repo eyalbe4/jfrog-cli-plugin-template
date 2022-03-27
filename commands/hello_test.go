@@ -5,18 +5,10 @@ import (
 	"testing"
 )
 
-func TestSimpleHello(t *testing.T) {
-	conf := &helloConfiguration{
-		addressee: "World",
-	}
-	assert.Equal(t, doGreet(conf), "Hello World!")
+func Test1(t *testing.T) {
+	assert.Equal(t, "aaa", "aaa")
 }
 
-func TestComplexHello(t *testing.T) {
-	conf := &helloConfiguration{
-		addressee: "World",
-		shout:     true,
-		prefix:    "test: ",
-	}
-	assert.Equal(t, doGreet(conf), "TEST: HELLO WORLD!\nTEST: HELLO WORLD!\nTEST: HELLO WORLD!")
+func Test2(t *testing.T) {
+	assert.Equal(t, "bbb", "bbb")
 }
